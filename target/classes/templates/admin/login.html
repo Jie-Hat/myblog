@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css" th:href="@{/css/semantic.min.css}">
+    <title>登录</title>
+    <style>
+        body {
+            background: url("/image/back.jpg") no-repeat;
+            background-size: 100% 100%;
+            height: auto;
+        }
+
+        #login_box {
+            border: 1px solid #d7d4f0;
+            width: 20%;
+            height: 400px;
+            /*background: url("/image/back.jpg") no-repeat;*/
+            /*background-color: #00000010;*/
+            margin: auto;
+            margin-top: 10%;
+            text-align: center;
+            border-radius: 10px;
+            padding: 50px 50px;
+        }
+
+        h2 {
+            color: #00B5AD;
+            margin-top: 5%;
+        }
+
+        #input-box {
+            margin-top: 5%;
+        }
+
+        span {
+            color: #fff;
+        }
+
+        input {
+            border: 0;
+            width: 60%;
+            font-size: 15px;
+            color: #fff;
+            background: transparent;
+            border-bottom: 2px solid #fff;
+            padding: 5px 10px;
+            outline: none;
+            margin-top: 10px;
+        }
+
+        /*button {*/
+        /*    background: url("/static/image/back.jpg") no-repeat;*/
+        /*}*/
+
+        #sign_up {
+            margin-top: 45%;
+            margin-left: 60%;
+        }
+
+        a {
+            color: #b94648;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="login_box">
+        <h2>LOGIN</h2>
+        <form class="ui form" method="post" action="#" th:action="@{/admin/login}">
+            <div id="input_box">
+                <input type="text" name="username" placeholder="请输入用户名">
+            </div><br>
+            <div class="input_box">
+                <input type="password" name="password" placeholder="请输入密码">
+            </div><br><br><br>
+            <button style="background: url(/image/back.jpg);background-size: 100% 130%;" class="ui fluid small submit button">登 录</button>
+
+            <div class="ui error mini message"></div>
+            <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">132</div>
+        </form>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js" th:href="@{/js/semantic.min.js}"></script>
+
+<script>
+    $('.ui.form').form({
+        fields:{
+            username:{
+                identifier:'username',
+                rules:[{
+                    type:'empty',
+                    prompt:'请输入用户名'
+                }]
+            },
+            password:{
+                identifier:'password',
+                rules:[{
+                    type:'empty',
+                    prompt:'请输入密码'
+                }]
+            }
+        }
+    })
+</script>
+</body>
+</html>

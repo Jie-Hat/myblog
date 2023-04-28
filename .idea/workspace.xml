@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c0f495de-1264-452b-9b95-1cc0d438a189" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="spring-beans.schema" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2HrV00Pvk1Camn43mt4nU8a6zRb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/image" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ IDEA 2021.3.2\blog\src\main\resources\static\image" />
+      <recent name="D:\IntelliJ IDEA 2021.3.2\blog\src\main\resources\static\css" />
+      <recent name="D:\IntelliJ IDEA 2021.3.2\blog\src\main\resources\static\js" />
+      <recent name="D:\IntelliJ IDEA 2021.3.2\blog\src\main\resources\static\image\blogImage" />
+      <recent name="D:\IntelliJ IDEA 2021.3.2\blog\src\main\java\com\flaneur\blog\util" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IntelliJ IDEA 2021.3.2\blog\src\main\resources\static\image\blogImage" />
+      <recent name="D:\IntelliJ IDEA 2021.3.2\blog\src\main\resources\templates\admin" />
+      <recent name="D:\IntelliJ IDEA 2021.3.2\blog\src\main\resources\static\image" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.flaneur.blog.queryvo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BlogApplication">
+    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.flaneur.blog.util.MD5Utils" />
+      <module name="blog" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.flaneur.blog.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="blog-input.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/blog/templates/admin/blog-input.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="index.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/blog/templates/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/blog/templates/admin/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="BlogApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.flaneur.blog.BlogApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.blog-input.html" />
+        <item itemvalue="JavaScript Debug.login.html" />
+        <item itemvalue="Application.MD5Utils" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c0f495de-1264-452b-9b95-1cc0d438a189" name="Changes" comment="" />
+      <created>1669042965660</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669042965660</updated>
+      <workItem from="1669042966768" duration="1163000" />
+      <workItem from="1669044219573" duration="21000" />
+      <workItem from="1669044264370" duration="133000" />
+      <workItem from="1669044414978" duration="346000" />
+      <workItem from="1669044797143" duration="2876000" />
+      <workItem from="1669082620825" duration="1841000" />
+      <workItem from="1669101926549" duration="4450000" />
+      <workItem from="1669188245850" duration="5312000" />
+      <workItem from="1670554544011" duration="8446000" />
+      <workItem from="1670594888567" duration="3797000" />
+      <workItem from="1670644072766" duration="5772000" />
+      <workItem from="1670679354078" duration="7169000" />
+      <workItem from="1670829236496" duration="10785000" />
+      <workItem from="1670849889224" duration="3118000" />
+      <workItem from="1670853075351" duration="189000" />
+      <workItem from="1670853323116" duration="145000" />
+      <workItem from="1670853493875" duration="277000" />
+      <workItem from="1670853819242" duration="126000" />
+      <workItem from="1670853989325" duration="603000" />
+      <workItem from="1670854641043" duration="113000" />
+      <workItem from="1670854786062" duration="1292000" />
+      <workItem from="1670856124203" duration="3938000" />
+      <workItem from="1670919719707" duration="11575000" />
+      <workItem from="1670986553337" duration="19857000" />
+      <workItem from="1671071638250" duration="26182000" />
+      <workItem from="1675671521883" duration="7084000" />
+      <workItem from="1675839540263" duration="13642000" />
+      <workItem from="1675926532194" duration="10655000" />
+      <workItem from="1675952863440" duration="1303000" />
+      <workItem from="1675998011632" duration="30825000" />
+      <workItem from="1676082465710" duration="16507000" />
+      <workItem from="1676212717499" duration="3195000" />
+      <workItem from="1676272736500" duration="13931000" />
+      <workItem from="1676435951529" duration="4312000" />
+      <workItem from="1676540533455" duration="5166000" />
+      <workItem from="1676736050306" duration="816000" />
+      <workItem from="1676858630381" duration="7021000" />
+      <workItem from="1677552302888" duration="5141000" />
+      <workItem from="1681969075279" duration="2099000" />
+      <workItem from="1681971560253" duration="1334000" />
+      <workItem from="1681972933173" duration="554000" />
+      <workItem from="1681973528898" duration="2538000" />
+      <workItem from="1681976206480" duration="901000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.thymeleaf:thymeleaf" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/blog$MD5Utils.ic" NAME="MD5Utils Coverage Results" MODIFIED="1670679991366" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.flaneur.blog.util.*</FILTER>
+    </SUITE>
+  </component>
+</project>

@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://162.14.81.51:3306/blog?useUnicode=true&characterEncoding=utf-8
+    username: root1
+    password: 123456
+mybatis:
+  type-aliases-package: com.flaneur.blog.pojo
+  mapper-locations: classpath:mybatis/mapper/*.xml
+logging:
+  level:
+    root: info
+    com.flaneur.blog: debug

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="chrome=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>关于我</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css" th:href="@{/css/semantic.min.css}">
+   <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
+</head>
+<body>
+   <!-- 导航 -->
+   <nav class="ui inverted attached segment m-padded-tb-mini ">
+       <div class="ui container">
+           <div class="ui inverted secondary stackable menu">
+               <h2 class="ui teal header item">Flaneur</h2>
+               <a href="#" th:href="@{/}" class="item"><i class="home icon"></i>首页</a>
+               <a href="#" th:href="@{/types/-1}" class="item"><i class="idea icon"></i>分类</a>
+<!--               <a href="#" class="item"><i class="tags icon"></i>标签</a>-->
+               <a href="#" class="active item"><i class="info icon"></i>关于我</a>
+           <div class="right item">
+               <div class="ui icon input">
+                   <input type="text" placeholder="Search....">
+                   <i class="search link icon"></i>
+               </div>
+           </div>
+           </div>
+       </div>
+   </nav> 
+
+   <!-- 内容 -->
+   <div class="m-container m-padded-tb-large">
+       <div class="ui container">
+            <div class="ui grid">
+                <div class="eleven wide column">
+                    <canvas width="650" height="550" id="canvas"></canvas>
+                </div>
+                <div class="five wide column">
+                    <div class="ui top attached segment">
+                        <div class="ui header">关于我</div>
+                    </div>
+                    <div class="ui attached segment">
+                        <p class="m-text">性格开朗，热爱运动、编程，喜欢用技术去探索世界；一个终生学习者，正在探索高效学习的方法。</p>
+                        <p class="m-text">希望可以结识共同成长的小伙伴。</p>
+                    </div>
+                    <div class="ui attached segment">
+                        <div class="ui orange basic left pointing label">编程</div>
+                        <div class="ui orange basic left pointing label">运动</div>
+                        <div class="ui orange basic left pointing label">思考</div>
+                        <div class="ui orange basic left pointing label">阅读</div>
+                    </div>
+                    <div class="ui bottom attached segment">
+                        <a href="#" class="ui qq circular icon button" data-content="490737985" data-position="bottom center"><i class="qq icon"></i></a>
+                        <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
+                    </div>
+                    <div class="ui wechat-qr flowing popup transition hidden">
+                        <img src="./image/wechat.jpg" th:src="@{/image/wechat.jpg}" alt="" class="ui rounded image" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+       </div>
+   </div>
+   
+
+   <!--底部-->
+   <footer class="ui inverted vertical segment m-padded-tb-massive">
+       <div class="ui center aligned container">
+           <div class="ui inverted divided stackable grid">
+               <div class="three wide column">
+                   <div class="ui inverted link list">
+                       <div class="item">
+                           <img src="../static/image/wechat.jpg" th:src="@{/image/wechat.jpg}" class="ui rounded image" alt="" style="width: 110px">
+                       </div>
+                   </div>
+               </div>
+               <div class="three wide column">
+                   <h4 class="ui inverted header m-text-thin m-text-spaced">最新博客</h4>
+                   <div class="ui inverted link list m-text-lined" th:each="newestBlog : ${pageInfo3.list}">
+                       <a href="#" class="item m-text-lined" th:href="@{/blog/{id}(id=${newestBlog.id})}" th:text="${newestBlog.title}">用户故事（User story）</a>
+                   </div>
+               </div>
+               <div class="three wide column">
+                   <h4 class="ui inverted header m-text-thin m-text-spaced">联系我</h4>
+                   <div class="ui inverted link list m-text-lined"><br>
+                       <a href="#" class="item">Email：497037985@qq.com</a><br>
+                       <a href="#" class="item">QQ：497037985</a>
+                   </div>
+               </div>
+               <div class="seven wide column">
+                   <h4 class="ui inverted header m-text-thin m-text-spaced">Blog</h4><br>
+                   <p class="m-text-thin m-text-spaced m-opacity-mini">这是我的个人博客，会分享关于编程、写作、思考相关的任何东西，欢迎浏览并留下你的意见...</p>
+               </div>
+           </div>
+           <div class="ui inverted section divider"></div>
+           <a class="beian" href="https://www.beian.gov.cn/portal/registerSystemInfo?recordcode=51012402000788" target="_blank" style="float:bottom;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;"><img src="../static/image/beian.jpg" th:src="@{/image/beian.jpg}" style="float:bottom;height:15px;line-height:20px;"/>川公网安备 51012402000788号</a>&nbsp;&nbsp;&nbsp;&nbsp;
+           <a href="https://beian.miit.gov.cn/" target="_blank">蜀ICP备2023003380号-1</a>
+       </div> 
+   </footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js" th:href="@{/js/semantic.min.js}"></script>
+<script>
+    $('.qq').popup();
+    $('.wechat').popup({
+        popup : $('.wechat-qr'),
+        position: 'bottom center'
+    });
+</script>
+<script type="text/javascript">
+       // 动画兼容函数
+       window.requestAnimFrame = (function () {
+           return (
+               window.requestAnimationFrame ||
+               window.webkitRequestAnimationFrame ||
+               window.mozRequestAnimationFrame ||
+               window.oRequestAnimationFrame ||
+               window.msRequestAnimationFrame ||
+               function (callback) {
+                   window.setTimeout(callback, 1000 / 60)
+               }
+           )
+       })()
+
+       const canvas = document.getElementById('canvas')
+       const context = canvas.getContext('2d')
+
+       // 创建粒子
+       var dots = []
+       for (var i = 0; i < 100; i++) {
+           dots.push({
+               x: Math.random() * canvas.width, // x  , y  为  粒子坐标
+               y: Math.random() * canvas.height,
+               xa: Math.random() * 3 - 1, // xa , ya 为  粒子 xy 轴加速度
+               ya: Math.random() * 3 - 1,
+               max: 100 // 连线的最大距离 px
+           })
+       }
+
+       // 绘制粒子
+       function drawDots() {
+           // 先清空
+           context.clearRect(0, 0, canvas.width, canvas.height)
+           // context.fillStyle = 'rgba(0,43,54,0.1)'
+           // context.fillRect(0, 0, canvas.width, canvas.height)
+
+           // 循环加载粒子
+           dots.forEach((dot) => {
+               // 粒子位移
+               dot.x += dot.xa
+               dot.y += dot.ya
+
+               // 遇到边界将 加速度 反向
+               dot.xa *= dot.x > canvas.width || dot.x < 0 ? -1 : 1
+               dot.ya *= dot.y > canvas.height || dot.y < 0 ? -1 : 1
+
+               // 绘制点
+               context.fillRect(dot.x - 1, dot.y - 1, 2, 2)
+               context.fillStyle = 'rgba(0,191,255,1)'
+
+               drawLine(dot, dots)
+           })
+       }
+
+       /**
+        * 计算距离 并连线
+        * @param dot 当前点
+        * @param dots 所有点
+        */
+           // 鼠标粒子
+       let warea = {
+               x: null,
+               y: null,
+               max: 200 // 鼠标位置 和点的连线
+           }
+       //获取鼠标活动时的鼠标坐标
+       window.onmousemove = (e) => {
+           warea.x = e.clientX
+           warea.y = e.clientY
+       }
+       //鼠标移出界面时清空
+       window.onmouseout = (e) => {
+           warea.x = null
+           warea.y = null
+       }
+
+       function drawLine(dot, dots) {
+           // 加入鼠标位 粒子
+           var ndots = [warea].concat(dots)
+
+           for (var i = 0; i < ndots.length; i++) {
+               var item = ndots[i]
+
+               // 过滤错误信息
+               if (dot === item || item.x === null || item.y === null) continue
+               // 创建变量
+               let xc = dot.x - item.x,
+                   yc = dot.y - item.y,
+                   dis = '',
+                   ratio = ''
+
+               // 两个粒子之间的距离
+               dis = Math.sqrt(xc * xc + yc * yc)
+
+               // 判断 粒子 之间的距离
+               if (dis < item.max) {
+                   // 如果是鼠标，则让其他粒子向鼠标的位置移动
+                   if (item === warea && dis > item.max / 2) {
+                       dot.x -= xc * 0.03
+                       dot.y -= yc * 0.03
+                   }
+                   // 计算距离比 -- 用于线 厚度
+                   ratio = (item.max - dis) / item.max
+                   // 画线
+                   context.beginPath()
+                   context.lineWidth = ratio / 2
+                   context.strokeStyle = 'rgba(0,191,255,1)'
+                   context.moveTo(dot.x, dot.y)
+                   context.lineTo(item.x, item.y)
+                   context.stroke()
+               }
+           }
+       }
+
+       drawDots()
+       function animate() {
+           requestAnimFrame(animate)
+           drawDots()
+       }
+       animate()
+</script>
+</body>
+</html>
